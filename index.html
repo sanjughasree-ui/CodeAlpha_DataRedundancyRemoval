@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Data Redundancy Removal System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>☁️ Data Redundancy Removal System</h1>
+
+        <p class="subtitle">
+            CodeAlpha Cloud Computing Internship — Task 1
+        </p>
+
+        <div class="card">
+
+            <h2>Student Data</h2>
+
+            <form id="studentForm">
+
+                <label for="studentId">Student ID</label>
+                <input
+                    type="text"
+                    id="studentId"
+                    placeholder="Enter Student ID"
+                    required
+                >
+
+                <label for="studentName">Student Name</label>
+                <input
+                    type="text"
+                    id="studentName"
+                    placeholder="Enter Student Name"
+                    required
+                >
+
+                <label for="email">Email</label>
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter Email"
+                    required
+                >
+
+                <button type="submit">
+                    Add Student
+                </button>
+
+            </form>
+
+            <div id="message"></div>
+
+        </div>
+
+        <div class="card">
+
+            <h2>Verified Student Records</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Student ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+
+                <tbody id="studentTable">
+                    <!-- Student records appear here -->
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
